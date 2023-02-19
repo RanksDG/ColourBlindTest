@@ -17,24 +17,39 @@ div.key-grid{
     padding: var(--gap);
     width: min-content;
     border: 1px solid black;
-   
-
 }
 
-#copy-button{
-    display: "none";
-}
 div.marco-grid{
     display:grid;
     gap: var(--gap-large);
     justify-items: center;
     padding: var(--var(--gap-large));
-
 }
 
 #scoreboard{
     font-size:3rem;
 }
+
+div.center{
+    margin: 4rem 0 0 -3rem;
+    left: 50%;
+    position: fixed;
+}
+
+div.centerText{
+    margin: 4rem 0 0 -18rem;
+    left: 50%;
+    position: fixed;
+    width: 36rem;
+}
+
+div.instructions{
+    margin: 1rem 0 0 -18rem;
+    left: 50%;
+    position: fixed;
+    width: 36rem;
+}
+
 div.color{
     border-radius: 100%;
     display: inline-block;

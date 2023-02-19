@@ -9,6 +9,7 @@ trailsPerColor = 3;
 trails = color.length * trailsPerColor;
 trailsleft= trails;
 data = [];
+copyButton.style.display = "none";
 
 function randomColor(){
     currColor = Math.floor(Math.random()* color.length);

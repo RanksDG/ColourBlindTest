@@ -1,6 +1,6 @@
 running = false;
 //Erick Petrucelli
-const rgba2hex = (rgba) => `#${rgba.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+\.{0,1}\d*))?\)$/).slice(1).map((n, i) => (i === 3 ? Math.round(parseFloat(n) * 255) : parseFloat(n)).toString(16).padStart(2, '0').replace('NaN', '')).join('')}`
+// const rgba2hex = (rgba) => `#${rgba.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+\.{0,1}\d*))?\)$/).slice(1).map((n, i) => (i === 3 ? Math.round(parseFloat(n) * 255) : parseFloat(n)).toString(16).padStart(2, '0').replace('NaN', '')).join('')}`
 keys = ["KeyS", "KeyD", "KeyF", "KeyJ", "KeyK", "KeyL"];
 
 document.addEventListener("keyup", (event) => {
@@ -24,14 +24,11 @@ document.addEventListener("keyup", (event) => {
             
         }
         setScoreboard();
-           if(trailsleft == 0){
+        if(trailsleft == 0){
             randomDiv.style.display = "none";
             output.innerText = JSON.stringify(data);
             copyButton.style.display = "inline-block";
-           }
+        }
     }
     
 }, false);
-
-
-
