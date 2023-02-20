@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="./myfile.css"/>
     </head>
     <body>
-      <div class="marco-grid">
-        <div id="scoreboard">7/18</div>
-        <div class="key-grid">
+        <div class="marco-grid">
+            <div id="scoreboard">7/18</div>
+            <div class="key-grid">
                 <div class = "color" id ="red" >S</div>
                 <div class = "color" id ="brown">D</div>
                 <div class = "color" id ="green">F</div>
@@ -17,12 +17,16 @@
                 <div class = "color" id ="purple">L</div>
             </div>
         </div>
+        <div class="center">
             <div class="color" id ="random"></div>
+        </div>
+        <div class="centerText">
             <div id = "output"></div>
-            <button id ="copy-button">copy</button>
-            <script src="./logic.js"></script>
-            <script src="./keyboard.js"></script>
-            <script>setScoreboard()</script>
-
+            <button class="copybutton" id ="copy-button">copy</button>
+        </div>
+        <div class="instructions" id="instructions">instructions</div>
+        <script src="./logic.js"></script>
+        <script src="./keyboard.js"></script>
+        <script>setScoreboard()</script>
     </body>
 </html>
